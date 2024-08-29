@@ -20,3 +20,7 @@ A project to automate API testing using BDD and Page Object Model.
 **Release Branches:** Create this branch from develop when preparing for a new release.'
 
     Command: git checkout -b release/release-version
+
+**Hotfix Branches:** Create this branch from main for urgent fixes.
+
+    Command: git checkout -b hotfix/hotfix-name
