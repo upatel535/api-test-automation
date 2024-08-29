@@ -67,6 +67,15 @@
             <artifactId>spring-webmvc</artifactId>
             <version>4.0.0.RELEASE</version>
         </dependency>
+
+<dependency>
+    <groupId>net.masterthought</groupId>
+    <artifactId>maven-cucumber-reporting</artifactId>
+    <version>5.8.2</version>
+</dependency>
+
+        
+
     </dependencies>
 
     <build>
@@ -81,6 +90,28 @@
                     </includes>
                 </configuration>
             </plugin>
+ <plugin>
+            <groupId>com.github.cucumber</groupId>
+            <artifactId>cucumber-reporting-maven-plugin</artifactId>
+            <version>5.2.0</version> <!-- Use the latest version -->
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>generate</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <!-- Path to the Cucumber JSON report -->
+                <jsonFiles>
+                    <jsonFile>target/cucumber-report.json</jsonFile>
+                </jsonFiles>
+                <!-- Output directory for the HTML report -->
+                <outputDirectory>target/cucumber-html-reports</outputDirectory>
+            </configuration>
+        </plugin>
+
+
         </plugins>
     </build>
 
