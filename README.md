@@ -25,25 +25,8 @@ A project to automate API testing using BDD and Page Object Model.
 
     Command: git checkout -b hotfix/hotfix-name
 
-Project Structure 
 
-src
- ├── main
- │    └── java
- │         └── com
- │              └── example
- │                   └── page
- │                        └── ApiPage.java
- └── test
-      ├── java
-      │    └── com
-      │         └── example
-      │              ├── steps
-      │              │    └── ApiSteps.java
-      │              ├── runner
-      │              │    └── TestRunner.java
-      │              └── features
-      │                   └── api.feature
-      └── resources
-           └── test-config.properties
+**Project Structure **
+
+![image](https://github.com/user-attachments/assets/6ef7faf1-bd4b-47c7-8849-66ec3fc8a3cd)
 
