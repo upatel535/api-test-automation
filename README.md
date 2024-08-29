@@ -5,7 +5,7 @@ A project to automate API testing using BDD and Page Object Model.
 
 **Main Branch:** This is the default branch where the stable code resides.
 
-**Develop Branch: ** Create this branch from main for integrating features and bug fixes.
+**Develop Branch:** Create this branch from main for integrating features and bug fixes.
 Command: git checkout -b develop
 
 **Feature Branches:** For each new feature, create a branch off develop.
