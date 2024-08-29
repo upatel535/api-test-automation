@@ -1,11 +1,11 @@
 package com.example.steps;
 
 import com.example.page.ApiPage;
-//import io.cucumber.java.en.Then;
-//import io.cucumber.java.en.When;
-import io.cucumber.Then;
-import io.cucumber.When;
-//import org.junit.Assert;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+//import io.cucumber.Then;
+//import io.cucumber.When;
+import org.junit.Assert;
 
 public class ApiSteps {
     private ApiPage apiPage = new ApiPage();

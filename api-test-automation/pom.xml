@@ -11,12 +11,12 @@
        <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-java</artifactId>
-    <version>7.18.1</version>
+    <version>7.0.0</version>
 </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
-            <version>7.18.1</version>
+            <version>7.0.0</version>
             <scope>test</scope>
         </dependency>
             <!-- JUnit Dependency -->
@@ -26,6 +26,15 @@
         <version>4.13.2</version> <!-- Use the latest stable version available -->
         <scope>test</scope>
     </dependency>
+
+
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-junit-platform-engine</artifactId>
+    <version>7.18.1</version>
+    <scope>test</scope>
+</dependency>
+
         
         <!-- HTTP Client -->
         <dependency>
@@ -62,18 +71,31 @@
     </dependencies>
 
     
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M5</version>
-                <configuration>
-                    <includes>
-                        <include>**/*Test.java</include>
-                    </includes>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M5</version>
+            <configuration>
+                <includes>
+                    <include>**/*Test.java</include>
+                </includes>
+            </configuration>
+        </plugin>
+        <plugin>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-core</artifactId>
+            <version>7.10.1</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>generateReports</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
+
 </project>
