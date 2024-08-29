@@ -24,3 +24,26 @@ A project to automate API testing using BDD and Page Object Model.
 **Hotfix Branches:** Create this branch from main for urgent fixes.
 
     Command: git checkout -b hotfix/hotfix-name
+
+Project Structure 
+
+src
+ ├── main
+ │    └── java
+ │         └── com
+ │              └── example
+ │                   └── page
+ │                        └── ApiPage.java
+ └── test
+      ├── java
+      │    └── com
+      │         └── example
+      │              ├── steps
+      │              │    └── ApiSteps.java
+      │              ├── runner
+      │              │    └── TestRunner.java
+      │              └── features
+      │                   └── api.feature
+      └── resources
+           └── test-config.properties
+
