@@ -1,7 +1,8 @@
 # api-test-automation
 A project to automate API testing using BDD and Page Object Model.
 
-**Branching Strategy**__
+**Branching Strategy**
+
 **Main Branch:** This is the default branch where the stable code resides.
 
 **Develop Branch: ** Create this branch from main for integrating features and bug fixes.
